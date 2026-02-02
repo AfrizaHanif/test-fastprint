@@ -21,6 +21,16 @@ Pastikan komputer anda memiliki software yang dibutuhkan untuk aplikasi ini:
 - [Composer](https://getcomposer.org/)
 - [Node.js](https://nodejs.org/) & NPM
 
+### Cek Instalasi
+
+Sebelum melanjutkan, pastikan software sudah terinstall dengan benar dengan menjalankan perintah berikut di terminal (Command Prompt / PowerShell):
+
+```bash
+php -v
+composer -v
+node -v
+```
+
 ## Instalasi
 
 1. **Clone Repositori**
