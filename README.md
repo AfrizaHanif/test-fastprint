@@ -28,7 +28,7 @@ Pastikan komputer anda memiliki software yang dibutuhkan untuk aplikasi ini:
     Menggunakan Terminal:
 
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/AfrizaHanif/test-fastprint.git
     cd fastprint-test
     ```
 
