@@ -4,7 +4,8 @@ Sebuah aplikasi tes junior programmer buatan Muhammad Afriza Hanif.
 
 ## Link Video Dokumentasi
 
-(Link Youtube)
+Dikarenakan video tersebut melebihi 10MB, maka video tersebut hanya apat dilihat melalui Youtube
+https://youtu.be/JBVJIYvmSyg
 
 ## Teknologi yang Digunakan
 
@@ -74,6 +75,7 @@ node -v
     ```
 
 6. **Jalankan Migration**
+
    Jalankan perintah berikut untuk membuat struktur tabel.
 
     ```bash
