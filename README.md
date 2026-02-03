@@ -17,9 +17,18 @@ Dikarenakan ukuran video melebihi limit 10MB, maka video tersebut hanya dapat di
 
 Pastikan komputer anda memiliki software yang dibutuhkan untuk aplikasi ini:
 
-- [PHP](https://www.php.net/) (8.1 atau tinggi) atau [XAMPP](https://www.apachefriends.org/)
+- [PHP](https://www.php.net/) (8.1 atau tinggi) atau [XAMPP](https://www.apachefriends.org/) (Disarankan)
 - [Composer](https://getcomposer.org/)
 - [Node.js](https://nodejs.org/) & NPM
+
+### Catatan untuk PHP
+
+Pastikan ekstensi ZIP menyala dengan cara:
+
+    1. Buka php.ini di folder (C:\xampp\php) (Jika tidak ditemukan, cari php.ini di search). Atau buka XAMPP (Run as Administrator), lalu klik config pada Apache dan klik php.ini
+    2. Pada Notepad (Windows), tekan ctrl + F dan ketik zip untuk menemukan keyword extension=zip
+    3. Jika terdapat semicolon (;) pada extension=zip, hapus untuk menyalakan extensi
+    4. Simpan dan tutup. Jika Apache dan MySQL masih menyala, mohon untuk melakukan restart ulang
 
 ### Cek Instalasi
 
@@ -33,7 +42,11 @@ node -v
 
 ## Instalasi
 
-1. **Clone Repositori**
+1. **Pembuatan Database**
+
+    Sebelum melakukan instalasi, hal yang pertama dilakukan adalah membuat database melalui PHPMyAdmin (Jika menggunakan XAMPP).
+
+2. **Clone Repositori**
 
     Menggunakan Terminal:
 
@@ -44,20 +57,20 @@ node -v
 
     Atau menggunakan [GitHub Desktop](https://desktop.github.com/).
 
-2. **Install PHP dependencies**
+3. **Install PHP dependencies**
 
     ```bash
     composer install
     ```
 
-3. **Install JavaScript dependencies**
+4. **Install JavaScript dependencies**
 
     ```bash
     npm install
     npm run build
     ```
 
-4. **Konfigurasi Environment**
+5. **Konfigurasi Environment**
 
     Salin file .env.example menjadi .env dan sesuaikan konfigurasi database Anda.
 
@@ -67,13 +80,19 @@ node -v
 
     Update `DB_DATABASE`, `DB_USERNAME`, and `DB_PASSWORD` di dalam file `.env` sesuai dengan database yang ada di komputer anda.
 
-5. **Generate Application Key**
+    Catatan: Pastikan nama database (`DB_DATABASE`) sama dengan nama database yang dibuat melalui phpMyAdmin.
+
+7. **Generate Application Key**
+
+    Jalankan perintah berikut untuk membuat application key.
 
     ```bash
     php artisan key:generate
     ```
 
-6. **Jalankan Migration**
+    Perintah tersebut akan membuat application key di file .env.
+
+8. **Jalankan Migration**
 
    Jalankan perintah berikut untuk membuat struktur tabel.
 
