@@ -4,8 +4,7 @@ Sebuah aplikasi tes junior programmer buatan Muhammad Afriza Hanif.
 
 ## Link Video Dokumentasi
 
-Dikarenakan video tersebut melebihi 10MB, maka video tersebut hanya apat dilihat melalui Youtube
-https://youtu.be/JBVJIYvmSyg
+Dikarenakan ukuran video melebihi limit 10MB, maka video tersebut hanya dapat dilihat melalui Youtube: https://youtu.be/JBVJIYvmSyg
 
 ## Teknologi yang Digunakan
 
