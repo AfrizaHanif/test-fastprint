@@ -25,10 +25,10 @@ Pastikan komputer anda memiliki software yang dibutuhkan untuk aplikasi ini:
 
 Pastikan ekstensi ZIP menyala dengan cara:
 
-    1. Buka php.ini di folder (C:\xampp\php) (Jika tidak ditemukan, cari php.ini di search). Atau buka XAMPP (Run as Administrator), lalu klik config pada Apache dan klik php.ini
-    2. Pada Notepad (Windows), tekan ctrl + F dan ketik zip untuk menemukan keyword extension=zip
-    3. Jika terdapat semicolon (;) pada extension=zip, hapus untuk menyalakan extensi
-    4. Simpan dan tutup. Jika Apache dan MySQL masih menyala, mohon untuk melakukan restart ulang
+1. Buka php.ini di folder (C:\xampp\php) (Jika tidak ditemukan, cari php.ini di search). Atau buka XAMPP (Run as Administrator), lalu klik config pada Apache dan klik php.ini
+2. Pada Notepad (Windows), tekan ctrl + F dan ketik zip untuk menemukan keyword extension=zip
+3. Jika terdapat semicolon (;) pada extension=zip, hapus untuk menyalakan extensi
+4. Simpan dan tutup. Jika Apache dan MySQL masih menyala, mohon untuk melakukan restart ulang
 
 ### Cek Instalasi
 
