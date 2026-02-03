@@ -44,13 +44,16 @@ class MainController extends Controller
 
     public function getData()
     {
-        // URL of API
-        $api_url = 'https://recruitment.fastprint.co.id/tes/api_tes_programmer';
-
         // Get credentials from database or use fallback
+        // URL of API
+        $api_url = Cache::remember('api_url', 3600, function () {
+            return Setting::where('key', 'api_url')->value('value');
+        });
+        // Username of API
         $username = Cache::remember('api_username', 3600, function () {
             return Setting::where('key', 'api_username')->value('value');
         });
+        // Password (md5) of API
         $password = Cache::remember('api_password', 3600, function () {
             return Setting::where('key', 'api_password')->value('value');
         });

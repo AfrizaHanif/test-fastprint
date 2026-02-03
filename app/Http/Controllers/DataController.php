@@ -78,9 +78,4 @@ class DataController extends Controller
         // Return to view
         return redirect()->route('main.index')->with('success', 'Semua data berhasil dihapus.');
     }
-
-    public function reset()
-    { // Return to view
-        return redirect()->route('main.index')->with('success', 'Semua data berhasil direset.');
-    }
 }
